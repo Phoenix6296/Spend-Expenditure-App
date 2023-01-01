@@ -1,0 +1,31 @@
+/* Utility classes */
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.expense-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+    padding: 1rem; */
+    margin: 1rem 0;
+    border-radius: 12px;
+}
+
+.expense-item__left {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.expense-price {
+    border: 1px solid #ccc;
+    height: 2rem;
+    width: 100px;
+    border-radius: 1rem;
+    font-weight: bold;
+    color: #f00;
+}
