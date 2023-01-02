@@ -4,7 +4,7 @@ import './ExpenseForm.css'
 const ExpenseForm = (props) => {
 
     const [itemTitle, setItemTitle] = useState('');
-    const [itemAmount, setitemAmount] = useState('')
+    const [itemAmount, setitemAmount] = useState('');
     const [itemDate, setItemDate] = useState('');
     const titleInputHandler = (event) => { setItemTitle(event.target.value); }
     const priceInputHandler = (event) => { setitemAmount(event.target.value); }
@@ -17,6 +17,7 @@ const ExpenseForm = (props) => {
             date: new Date(itemDate)
         }
         props.onSaveExpenseForm(expenseData);
+        props.addNewExpense(false);
         setItemTitle('');
         setitemAmount('');
         setItemDate('');
