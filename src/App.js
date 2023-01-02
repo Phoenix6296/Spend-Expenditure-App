@@ -10,6 +10,8 @@ const App = () => {
     }
     console.log(expenseData, "This is App.js");
   }
+
+  
   const expense = [{
     id: 'e1',
     title: "Car Insurance",

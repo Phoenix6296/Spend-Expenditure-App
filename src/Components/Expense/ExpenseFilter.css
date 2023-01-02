@@ -1,0 +1,21 @@
+.expenseFilter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+.expense-filter__label {
+    font-size: 1.5rem;
+}
+
+.expense-filter__year {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    background: #f2f2f2;
+    font: inherit;
+    color: #333;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
