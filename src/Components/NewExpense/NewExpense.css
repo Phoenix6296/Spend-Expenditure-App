@@ -1,0 +1,11 @@
+.newExpense {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem auto;
+    width: 60%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
