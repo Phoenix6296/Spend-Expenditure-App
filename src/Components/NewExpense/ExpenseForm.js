@@ -4,21 +4,21 @@ import './ExpenseForm.css'
 const ExpenseForm = (props) => {
 
     const [itemTitle, setItemTitle] = useState('');
-    const [itemPrice, setItemPrice] = useState('')
+    const [itemAmount, setitemAmount] = useState('')
     const [itemDate, setItemDate] = useState('');
     const titleInputHandler = (event) => { setItemTitle(event.target.value); }
-    const priceInputHandler = (event) => { setItemPrice(event.target.value); }
+    const priceInputHandler = (event) => { setitemAmount(event.target.value); }
     const dateInputHandler = (event) => { setItemDate(event.target.value); }
     const submitHandler = (event) => {
         event.preventDefault();
         const expenseData = {
             title: itemTitle,
-            price: itemPrice,
+            amount: "₹" + itemAmount,
             date: new Date(itemDate)
         }
         props.onSaveExpenseForm(expenseData);
         setItemTitle('');
-        setItemPrice('');
+        setitemAmount('');
         setItemDate('');
     }
 
@@ -31,7 +31,7 @@ const ExpenseForm = (props) => {
                 </div>
                 <div>
                     <label htmlFor="item-price">Item Price(₹)</label>
-                    <input type="number" id="item-price" value={itemPrice} placeholder='Enter the Price' className="form__input" onChange={priceInputHandler} required />
+                    <input type="number" id="item-price" value={itemAmount} placeholder='Enter the Price' className="form__input" onChange={priceInputHandler} required />
                 </div>
                 <div>
                     <label htmlFor="item-date">Item Date</label>
