@@ -5,7 +5,7 @@ const ExpenseForm = () => {
 
     const [itemTitle, setItemTitle] = useState('');
     const [itemPrice, setItemPrice] = useState('')
-    const [itemDate, setItemDate] = useState(new Date());
+    const [itemDate, setItemDate] = useState('');
     const titleInputHandler = (event) => { setItemTitle(event.target.value); }
     const priceInputHandler = (event) => { setItemPrice(event.target.value); }
     const dateInputHandler = (event) => { setItemDate(event.target.value); }
