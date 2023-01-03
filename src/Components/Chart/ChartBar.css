@@ -9,6 +9,7 @@
 
 .chartBar__bar {
     height: 100%;
+    width: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -19,10 +20,12 @@
 
 .chartBar__fill {
     height: 100%;
+    width: 100%;
     border-radius: 12px;
-    padding: 0.5rem;
     background-color: orangered;
+    transition: height 0.3s ease-out;
 }
+
 
 .chartBar__label {
     font-size: medium;
