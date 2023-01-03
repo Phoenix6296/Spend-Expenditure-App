@@ -25,7 +25,7 @@ const ExpenseForm = (props) => {
 
     return (
         <form action="submit" onSubmit={submitHandler} className='form__wrapper center'>
-            <div className='form__container center'>
+            <div className='form__container'>
                 <div>
                     <label htmlFor="item-title">Item Title</label>
                     <input id="item-title" type="text" value={itemTitle} placeholder='Enter the Item Name' className="form__input" onChange={titleInputHandler} required />

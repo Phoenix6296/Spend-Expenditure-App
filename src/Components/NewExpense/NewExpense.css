@@ -7,7 +7,6 @@
     margin: 2rem auto;
     width: 60%;
     border: 1px solid #ccc;
-    padding: 2rem;
 }
 
 .newExpense__button {
@@ -21,4 +20,21 @@
     font-weight: bold;
     color: #000;
     border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .newExpense {
+        font-size: 0.6rem;
+    }
+
+    input::placeholder {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .newExpense {
+        margin: 0.1rem;
+        width: auto;
+    }
 }

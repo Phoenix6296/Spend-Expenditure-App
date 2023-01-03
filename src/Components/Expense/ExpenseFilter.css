@@ -1,8 +1,6 @@
 .expenseFilter {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 1rem;
 }
 
 .expense-filter__label {
@@ -18,4 +16,10 @@
     border-radius: 6px;
     margin-bottom: 1rem;
     cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    .expenseFilter {
+        margin-top: 0.3rem;
+    }
 }

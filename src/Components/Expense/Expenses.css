@@ -4,3 +4,9 @@
     margin: 0 1rem;
     border-radius: 12px;
 }
+
+@media screen and (max-width: 900px) {
+    .expenses {
+        margin: 0;
+    }
+}

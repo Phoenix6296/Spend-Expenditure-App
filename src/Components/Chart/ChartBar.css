@@ -31,3 +31,23 @@
     font-size: medium;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    .chartBar__container{
+        height: auto;
+        margin: 0.2rem auto;
+    }
+    .chartBar__bar {
+        height: 5rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .chartBar__label {
+        font-size: 0.6rem;
+    }
+
+    .chartBar__bar {
+        width: 5px;
+    }
+}

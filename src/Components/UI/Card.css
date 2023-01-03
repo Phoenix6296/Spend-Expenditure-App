@@ -3,3 +3,9 @@
     padding: 1rem;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 750px) {
+    .card {
+        padding: 0.3rem;
+    }
+}

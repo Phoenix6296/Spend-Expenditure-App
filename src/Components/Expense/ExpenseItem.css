@@ -14,16 +14,24 @@
 }
 
 .expense-item__left {
+    flex: 0.8;
     display: flex;
     gap: 1rem;
     align-items: center;
 }
 
 .expense-price {
+    flex: 0.2;
     border: 1px solid #ccc;
     height: 2rem;
     width: 100px;
     border-radius: 1rem;
     font-weight: bold;
     color: #f00;
+}
+
+@media screen and (max-width: 750px) {
+    .expense-item {
+        font-size: 0.8rem;
+    }
 }
