@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Expenses from './Components/Expense/Expenses';
+// import ExpensesChart from './Components/Expense/ExpensesChart';
 import NewExpense from './Components/NewExpense/NewExpense';
 
 const DUMMY_DATA = [{
@@ -38,8 +39,9 @@ const App = () => {
     });
   }
   return (
-    <div className="App">
+    <div className="app">
       <NewExpense onSaveNewExpense={getDataFromNewExpenses} />
+      {/* <ExpensesChart /> */}
       <Expenses items={newExpense} />
     </div>
   );
