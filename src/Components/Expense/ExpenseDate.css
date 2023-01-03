@@ -9,3 +9,11 @@
     color: #fff;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    .expense-date {
+        width: 3rem;
+        padding: 0.8rem;
+        font-size: 0.6rem;
+    }
+}
