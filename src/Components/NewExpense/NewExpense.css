@@ -22,6 +22,18 @@
     border-radius: 6px;
 }
 
+.image_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.crossImage {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     .newExpense {
         font-size: 0.6rem;
