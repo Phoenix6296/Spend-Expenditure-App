@@ -17,7 +17,6 @@ const ExpensesChart = (props) => {
     ]
 
     for (const expense of props.expenses) {
-        //Select month for the filtered year
         if (props.filteredYear !== 'All' && expense.date.getFullYear() !== Number(props.filteredYear)) {
             continue
         }
